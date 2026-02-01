@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO_URL="https://github.com/loripb/dotfiles.git"
+REPO_URL= "git@github.com:loripb/.dotfiles.git"
 BARE_DIR="$HOME/.dotfiles"
 
 if [ -d "$BARE_DIR" ]; then
