@@ -1,7 +1,16 @@
 #!/bin/bash
+set -e # STOP immediately if any command fails
 
-REPO_URL="https://github.com/loripb/dotfiles.git"
+# 1. Define variables
+# Use SSH URL since you have keys set up
+REPO_URL="git@github.com:lei/.dotfiles.git"
+# Ensure we use the absolute path safely
 BARE_DIR="$HOME/.dotfiles"
+
+echo "--------------------------------------------------"
+echo "Target: $BARE_DIR"
+echo "Source: $REPO_URL"
+echo "--------------------------------------------------"
 
 if [ -d "$BARE_DIR" ]; then
   echo "Directory $BARE_DIR already exists."
