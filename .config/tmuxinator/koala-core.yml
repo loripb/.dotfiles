@@ -1,0 +1,34 @@
+name: koala-core
+root: ~/Koala/core/
+
+enable_pane_titles: true
+
+windows:
+  - editor:
+    - nvim
+  - server:
+      layout: main-horizontal
+      panes:
+      - console:
+          - rails c
+      - webpacker:
+        - bin/webpack-dev-server
+      - server:
+        - rails s
+
+
+
+
+
+
+      
+#        - docker terminal:
+#          - until docker compose ps | grep "Up"; do echo "Waiting for Docker..."; sleep 2; done; clear;
+#          - docker exec -it core-koala-1 /bin/sh
+#        - docker compose logs:
+#          - docker compose up
+#        - server logs:
+#          - until docker compose ps | grep "Up"; do echo "Waiting for Docker..."; sleep 2; done; clear;
+#          - docker exec -it core-koala-1 /bin/sh
+#          - ./docker-init.sh
+

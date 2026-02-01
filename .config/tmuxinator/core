@@ -1,0 +1,20 @@
+windows:
+  - editor:
+    layout: 2165,150x44,0,0[150x31,0,0,1,150x12,0,32,9]]
+    panes:
+      - nvim:
+        - nvim
+      - specs:
+  - server:
+      layout: tiled
+      panes:
+        - server:
+          - rails s
+        - webpacker:
+          - bin/webpack-dev-server
+        - local:
+          - rails c
+        - prod:
+  - notes:
+      panes:
+        - cd ../../Notes
