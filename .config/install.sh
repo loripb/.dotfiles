@@ -3,7 +3,7 @@ set -e # STOP immediately if any command fails
 
 # 1. Define variables
 # Use SSH URL since you have keys set up
-REPO_URL="git@github.com:lei/.dotfiles.git"
+REPO_URL="git@github.com:loripb/.dotfiles.git"
 # Ensure we use the absolute path safely
 BARE_DIR="$HOME/.dotfiles"
 
