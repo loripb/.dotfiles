@@ -1,2 +1,0 @@
-# Create a window and run the specified command
-launch --hold zsh -c "/Users/lei/.rbenv/shims/tmuxinator s koala-core"
